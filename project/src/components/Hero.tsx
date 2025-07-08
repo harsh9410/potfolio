@@ -1,13 +1,12 @@
 import React from 'react';
 import { Github, Linkedin, Instagram, Download } from 'lucide-react';
-import ParticleBackground from './ParticleBackground';
-import profilePhoto from '../asserts/photo.jpg';
+import ParticleBackground from '../../../src/components/ParticleBackground';
 
 const Hero = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/harshgupta', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/harshgupta', label: 'LinkedIn' },
-    { icon: Instagram, href: 'https://instagram.com/harshgupta', label: 'Instagram' },
+    { icon: Github, href: 'https://github.com/harsh9410', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/harsh-gupta-898852327/', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://www.instagram.com/harsh_gupta_9410/', label: 'Instagram' },
   ];
 
   return (
@@ -48,26 +47,24 @@ const Hero = () => {
               ))}
             </div>
 
-            {/* Resume Download */}
             <div className="flex justify-center md:justify-start">
               <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/25">
                 <Download size={20} className="mr-2" />
                 Download Resume
               </button>
             </div>
-          </div>
+          </div> 
+
+
+
 
           {/* Right Content - Profile Picture */}
           <div className="flex justify-center md:justify-end">
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-r from-purple-400 to-pink-600 p-1 animate-pulse">
                 <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
-                  <div className="w-72 h-72 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-6xl font-bold text-white animate-float overflow-hidden">
-                    <img 
-                      src={profilePhoto} 
-                      alt="Profile" 
-                      className="w-full h-full object-cover rounded-full" 
-                    />
+                  <div className="w-72 h-72 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-6xl font-bold text-white animate-float">
+                    HG
                   </div>
                 </div>
               </div>

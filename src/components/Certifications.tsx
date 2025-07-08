@@ -12,7 +12,8 @@ const Certifications = () => {
       date: 'January 2025',
       description: 'Comprehensive training on building intelligent chatbots using modern AI frameworks and NLP techniques.',
       skills: ['Natural Language Processing', 'Machine Learning', 'Python', 'TensorFlow'],
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-blue-500 to-cyan-500',
+      certificateUrl: 'https://example.com/certificate-ai-chatbot'
     },
     {
       title: 'Generative AI Workshop',
@@ -20,7 +21,8 @@ const Certifications = () => {
       date: 'December 2024',
       description: 'Hands-on workshop covering generative AI models, prompt engineering, and practical applications.',
       skills: ['Generative AI', 'Prompt Engineering', 'LLMs', 'AI Ethics'],
-      color: 'from-purple-500 to-pink-500'
+      color: 'from-purple-500 to-pink-500',
+      certificateUrl: 'https://example.com/certificate-generative-ai'
     },
     {
       title: 'Programming in Java',
@@ -28,7 +30,8 @@ const Certifications = () => {
       date: 'January - April 2025',
       description: 'Comprehensive Java programming course covering core concepts, OOP, and advanced Java features.',
       skills: ['Core Java', 'OOP', 'Collections', 'Multithreading', 'Exception Handling'],
-      color: 'from-orange-500 to-red-500'
+      color: 'from-orange-500 to-red-500',
+      certificateUrl: 'https://example.com/certificate-java'
     }
   ];
 
@@ -88,7 +91,10 @@ const Certifications = () => {
                       <Calendar size={16} className="mr-2" />
                       <span>{cert.date}</span>
                     </div>
-                    <button className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg transition-all duration-200 hover:scale-105">
+                    <button 
+                      onClick={() => window.open(cert.certificateUrl, '_blank')}
+                      className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg transition-all duration-200 hover:scale-105"
+                    >
                       <ExternalLink size={16} className="mr-2" />
                       View Certificate
                     </button>
