@@ -10,25 +10,25 @@ const Skills = () => {
       title: 'Frontend Development',
       icon: Code,
       color: 'from-blue-500 to-cyan-500',
-      skills: ['React', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript ES6+']
+      skills: ['React', 'HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript ']
     },
     {
       title: 'DevOps & Cloud',
       icon: Cloud,
       color: 'from-green-500 to-emerald-500',
-      skills: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Git', 'Linux']
+      skills: ['Docker', 'Kubernetes', 'AWS' , 'Git', 'Linux']
     },
     {
       title: 'Data & Backend',
       icon: Database,
       color: 'from-purple-500 to-violet-500',
-      skills: ['Python', 'SQL', 'NoSQL', 'API Development', 'Data Analysis', 'MongoDB']
+      skills: ['Python', 'SQL' , 'Data Analysis','Flask']
     },
     {
       title: 'Java Development',
       icon: Coffee,
       color: 'from-orange-500 to-red-500',
-      skills: ['Core Java', 'Spring Framework', 'JPA/Hibernate', 'Maven', 'JUnit', 'Design Patterns']
+      skills: ['Core Java', 'Spring Framework', 'Design Patterns']
     },
     {
       title: 'Soft Skills',

@@ -13,7 +13,7 @@ const Certifications = () => {
       description: 'Comprehensive training on building intelligent chatbots using modern AI frameworks and NLP techniques.',
       skills: ['Natural Language Processing', 'Machine Learning', 'Python', 'TensorFlow'],
       color: 'from-blue-500 to-cyan-500',
-      certificateUrl: 'https://example.com/certificate-ai-chatbot'
+      certificateUrl: 'https://drive.google.com/file/d/1AVdKg7Puy7X6twyRj30ayD3llF43YncW/view?usp=drivesdkt'
     },
     {
       title: 'Generative AI Workshop',
@@ -22,7 +22,7 @@ const Certifications = () => {
       description: 'Hands-on workshop covering generative AI models, prompt engineering, and practical applications.',
       skills: ['Generative AI', 'Prompt Engineering', 'LLMs', 'AI Ethics'],
       color: 'from-purple-500 to-pink-500',
-      certificateUrl: 'https://example.com/certificate-generative-ai'
+      certificateUrl: 'https://drive.google.com/file/d/1AYRbt0ohB8G2gii5xU2EbqWq4Kt3621k/view?usp=drivesdk'
     },
     {
       title: 'Programming in Java',
@@ -31,7 +31,7 @@ const Certifications = () => {
       description: 'Comprehensive Java programming course covering core concepts, OOP, and advanced Java features.',
       skills: ['Core Java', 'OOP', 'Collections', 'Multithreading', 'Exception Handling'],
       color: 'from-orange-500 to-red-500',
-      certificateUrl: 'https://example.com/certificate-java'
+      certificateUrl: 'https://drive.google.com/file/d/1AgW5VNqLi6DFIAMiGUi16PMy7m0_bCbj/view?usp=drivesdk'
     }
   ];
 

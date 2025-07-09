@@ -5,9 +5,9 @@ import profilePhoto from '../asserts/photo.jpg';
 
 const Hero = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/harshgupta', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/harshgupta', label: 'LinkedIn' },
-    { icon: Instagram, href: 'https://instagram.com/harshgupta', label: 'Instagram' },
+    { icon: Github, href: 'https://github.com/harsh9410', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/harsh-gupta-898852327/', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://www.instagram.com/harsh_gupta_9410/', label: 'Instagram' },
   ];
 
   return (
@@ -50,7 +50,17 @@ const Hero = () => {
 
             {/* Resume Download */}
             <div className="flex justify-center md:justify-start">
-              <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/25">
+              <button 
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/resume.pdf';
+                  link.download = 'Harsh_Gupta_Resume.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/25"
+              >
                 <Download size={20} className="mr-2" />
                 Download Resume
               </button>

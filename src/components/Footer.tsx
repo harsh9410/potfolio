@@ -3,9 +3,9 @@ import { Github, Linkedin, Instagram, Heart } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/harshgupta', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/harshgupta', label: 'LinkedIn' },
-    { icon: Instagram, href: 'https://instagram.com/harshgupta', label: 'Instagram' },
+    { icon: Github, href: 'https://github.com/harsh9410', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/harsh-gupta-898852327/', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://www.instagram.com/harsh_gupta_9410/', label: 'Instagram' },
   ];
 
   const scrollToTop = () => {

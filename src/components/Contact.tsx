@@ -83,8 +83,13 @@ const Contact = () => {
                     <Phone size={24} className="text-white" />
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold">Availability</h4>
-                    <p className="text-gray-300">Open to new opportunities</p>
+                    <h4 className="text-white font-semibold">Phone</h4>
+                    <a 
+                      href="tel:+919257650180"
+                      className="text-green-400 hover:text-green-300 transition-colors duration-200"
+                    >
+                      +91 9257650180
+                    </a>
                   </div>
                 </div>
               </div>
