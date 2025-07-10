@@ -64,17 +64,6 @@ const Footer = () => {
           {/* Divider */}
           <div className="w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
 
-          {/* Copyright */}
-          <div className="text-center text-gray-400">
-            <p className="flex items-center justify-center space-x-2">
-              <span>© 2025 Harsh Gupta. Made with</span>
-              <Heart size={16} className="text-red-500 fill-current" />
-              <span>and lots of ☕</span>
-            </p>
-            <p className="text-sm mt-2">
-              Built with React, TypeScript, and Tailwind CSS
-            </p>
-          </div>
         </div>
       </div>
     </footer>

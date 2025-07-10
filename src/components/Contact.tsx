@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Send, Phone } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { ref, inView } = useInView({ threshold: 0.3 });
@@ -10,13 +11,28 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setStatus('idle');
+    try {
+      await emailjs.send(
+        'service_08wuxti',
+        'template_lzj1ykm',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'm4gEoizTa3mlw9peT'
+      );
+      setStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      setStatus('error');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -170,6 +186,12 @@ const Contact = () => {
                   <Send size={20} className="mr-2" />
                   Send Message
                 </button>
+                {status === 'success' && (
+                  <p className="text-green-400 text-center mt-4">Message sent successfully!</p>
+                )}
+                {status === 'error' && (
+                  <p className="text-red-400 text-center mt-4">Failed to send message. Please try again later.</p>
+                )}
               </form>
             </div>
           </div>

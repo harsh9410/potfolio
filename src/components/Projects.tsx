@@ -12,7 +12,9 @@ const Projects = () => {
       tech: ['IoT', 'Python', 'Arduino', 'Machine Learning', 'React'],
       icon: Zap,
       color: 'from-green-500 to-emerald-500',
-      highlights: ['Real-time monitoring', 'Route optimization', 'Cost reduction by 40%']
+      highlights: ['Real-time monitoring', 'Route optimization', 'Cost reduction by 40%'],
+      codeUrl: 'https://github.com/harsh9410/Waste-to-energy',
+      demoUrl: 'https://harsh1000.netlify.app/'
     },
     {
       title: 'Geo-Fencing Attendance Tracker',
@@ -20,15 +22,19 @@ const Projects = () => {
       tech: ['React Native', 'GPS API', 'Firebase', 'Node.js', 'MongoDB'],
       icon: MapPin,
       color: 'from-blue-500 to-cyan-500',
-      highlights: ['Automatic tracking', 'Location accuracy', 'Admin dashboard']
+      highlights: ['Automatic tracking', 'Location accuracy', 'Admin dashboard'],
+      codeUrl: 'https://github.com/harsh9410/Attendance-tracking-system',
+      demoUrl: 'https://harsh101.netlify.app/'
     },
     {
-      title: 'Campus Bus Tracking App',
-      description: 'Deployed mobile application that provides real-time bus tracking, route information, and estimated arrival times for campus transportation.',
-      tech: ['Flutter', 'Firebase', 'Google Maps API', 'Real-time DB'],
-      icon: Bus,
-      color: 'from-purple-500 to-pink-500',
-      highlights: ['Live tracking', 'Route optimization', 'User notifications']
+      title: 'Real-Time Voice Auctions',
+      description: 'A web application enabling users to participate in live auctions using real-time voice communication, powered by WebRTC and socket.io for seamless bidding experiences.',
+      tech: ['React', 'Node.js', 'WebRTC', 'Socket.io', 'Express'],
+      icon: Zap,
+      color: 'from-indigo-500 to-blue-500',
+      highlights: ['Live voice bidding', 'Real-time updates', 'Secure authentication'],
+      codeUrl: 'https://github.com/harsh9410/Voice-auction?tab=Apache-2.0-1-ov-file',
+      demoUrl: 'https://harsh1002.netlify.app/'
     }
   ];
 
@@ -107,14 +113,38 @@ const Projects = () => {
                 
                 {/* Action Buttons */}
                 <div className="flex space-x-3 mt-6">
-                  <button className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg transition-all duration-200 hover:scale-105">
-                    <ExternalLink size={16} className="mr-2" />
-                    Demo
-                  </button>
-                  <button className="flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors duration-200">
-                    <Github size={16} className="mr-2" />
-                    Code
-                  </button>
+                  {project.demoUrl ? (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg transition-all duration-200 hover:scale-105"
+                    >
+                      <ExternalLink size={16} className="mr-2" />
+                      Demo
+                    </a>
+                  ) : (
+                    <button className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg transition-all duration-200 hover:scale-105" disabled>
+                      <ExternalLink size={16} className="mr-2" />
+                      Demo
+                    </button>
+                  )}
+                  {project.codeUrl ? (
+                    <a
+                      href={project.codeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors duration-200"
+                    >
+                      <Github size={16} className="mr-2" />
+                      Code
+                    </a>
+                  ) : (
+                    <button className="flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors duration-200" disabled>
+                      <Github size={16} className="mr-2" />
+                      Code
+                    </button>
+                  )}
                 </div>
               </div>
             ))}

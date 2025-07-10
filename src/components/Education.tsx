@@ -11,7 +11,7 @@ const Education = () => {
       field: 'Computer Science & Engineering',
       institution: 'Global Institute of Technology, Jaipur',
       year: '2022-2026',
-      percentage: '8.5 CGPA',
+      percentage: '7.8 CGPA',
       status: 'Pursuing'
     },
     {
