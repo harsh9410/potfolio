@@ -9,7 +9,7 @@ const Projects = () => {
     {
       title: 'Smart Waste Management System',
       description: 'IoT-based solution for optimizing waste collection routes and monitoring bin levels in real-time using sensors and machine learning algorithms.',
-      tech: ['IoT', 'Python', 'Arduino', 'Machine Learning', 'React'],
+      tech: ['IoT', 'Python', 'Arduino', 'Machine Learning', 'React', 'TypeScript'],
       icon: Zap,
       color: 'from-green-500 to-emerald-500',
       highlights: ['Real-time monitoring', 'Route optimization', 'Cost reduction by 40%'],
@@ -19,7 +19,7 @@ const Projects = () => {
     {
       title: 'Geo-Fencing Attendance Tracker',
       description: 'GPS-based attendance system that automatically marks attendance when users enter designated geographical boundaries, perfect for remote work management.',
-      tech: ['React Native', 'GPS API', 'Firebase', 'Node.js', 'MongoDB'],
+      tech: ['React Native', 'GPS API', 'Firebase', 'Node.js', 'MongoDB', 'TypeScript'],
       icon: MapPin,
       color: 'from-blue-500 to-cyan-500',
       highlights: ['Automatic tracking', 'Location accuracy', 'Admin dashboard'],
@@ -29,12 +29,37 @@ const Projects = () => {
     {
       title: 'Real-Time Voice Auctions',
       description: 'A web application enabling users to participate in live auctions using real-time voice communication, powered by WebRTC and socket.io for seamless bidding experiences.',
-      tech: ['React', 'Node.js', 'WebRTC', 'Socket.io', 'Express'],
+      tech: ['React', 'Node.js', 'WebRTC', 'Socket.io', 'Express', 'TypeScript'],
       icon: Zap,
       color: 'from-indigo-500 to-blue-500',
       highlights: ['Live voice bidding', 'Real-time updates', 'Secure authentication'],
       codeUrl: 'https://github.com/harsh9410/Voice-auction?tab=Apache-2.0-1-ov-file',
       demoUrl: 'https://harsh1002.netlify.app/'
+    },
+    {
+      title: 'SSH Menu',
+      description: 'A web-based SSH client that allows users to execute Linux and Docker commands on remote servers through an intuitive menu-driven interface. Supports real-time command execution, output streaming, and session management.',
+      tech: ['SSH2', 'Docker', 'Streamlit', 'Paramiko', 'Subprocess', 'Linux'],
+      icon: Bus,
+      color: 'from-teal-500 to-blue-400',
+      highlights: ['Run all Linux commands', 'Docker command support', 'Real-time output', 'Session management'],
+      codeUrl: 'https://github.com/harsh9410/-SSH-Menu-App',
+      demoUrl: 'https://github.com/harsh9410/-SSH-Menu-App'
+    },
+    {
+      title: 'Automation Web App',
+      description: 'A comprehensive automation platform that performs repetitive web tasks such as sending WhatsApp messages, SMS, making calls, and more, all without human intervention. Integrates with multiple APIs and services for seamless automation workflows.',
+      tech: ['Python', 'Selenium', 'Twilio API', 'Streamlit', 'pyautogui', 'pywhatkit', 'gTTS', 'smtplib'],
+      icon: Zap,
+      color: 'from-purple-500 to-blue-500',
+      highlights: [
+        'Automated WhatsApp messaging',
+        'Bulk SMS and call automation',
+        'No human intervention required',
+        'Customizable workflow engine'
+      ],
+      codeUrl: 'https://github.com/harsh9410/Automation-Web-App',
+      demoUrl: 'https://github.com/harsh9410/Automation-Web-App'
     }
   ];
 

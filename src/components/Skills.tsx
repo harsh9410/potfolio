@@ -10,7 +10,7 @@ const Skills = () => {
       title: 'Frontend Development',
       icon: Code,
       color: 'from-blue-500 to-cyan-500',
-      skills: ['React', 'HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript ']
+      skills: ['React', 'HTML5', 'CSS3',  'JavaScript', 'TypeScript']
     },
     {
       title: 'DevOps & Cloud',
