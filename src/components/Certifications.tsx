@@ -32,6 +32,33 @@ const Certifications = () => {
       skills: ['Core Java', 'OOP', 'Collections', 'Multithreading', 'Exception Handling'],
       color: 'from-orange-500 to-red-500',
       certificateUrl: 'https://drive.google.com/file/d/1AgW5VNqLi6DFIAMiGUi16PMy7m0_bCbj/view?usp=drivesdk'
+    },
+    {
+      title: 'Data Structures with C Programming',
+      organization: 'Global Institute of Technology',
+      date: 'July 2024',
+      description: 'In-depth course on data structures and algorithms using C programming, focusing on practical implementation and problem-solving.',
+      skills: ['C Programming', 'Data Structures', 'Algorithms', 'Problem Solving'],
+      color: 'from-green-500 to-teal-500',
+      certificateUrl: 'https://drive.google.com/file/d/1BFP8ydTUddjxh6Veas_PuNJIfgF7pri4/view?usp=drivesdk'
+    },
+    {
+      title: 'HackCrux 2025',
+      organization: 'LNMIIT',
+      date: 'March 2025',
+      description: 'Participated in national-level hackathon organized by LNMIIT, showcasing innovation, problem-solving, and teamwork.',
+      skills: ['Hackathon', 'Innovation', 'Problem Solving', 'Teamwork'],
+      color: 'from-yellow-500 to-orange-500',
+      certificateUrl: 'https://drive.google.com/file/d/1BAdJHaqbgNRKWKWD5oBboGEw3s-AY7If/view?usp=drivesdk'
+    },
+    {
+      title: 'CodeFiesta 3.0 – 24-Hour Hackathon',
+      organization: 'Global Institute of Technology, Jaipur',
+      date: 'October 2024',
+      description: 'Participated in the innovation-driven hackathon organized by the Global Institute of Technology, Jaipur (Oct 2024), focused on tech problem-solving and rapid solution building.',
+      skills: ['Hackathon', 'Innovation', 'Problem Solving', 'Rapid Prototyping'],
+      color: 'from-pink-500 to-yellow-500',
+      certificateUrl: 'https://drive.google.com/file/d/1BFbn7GRIxtH44HQu1rYAtFz2cgjDhJa5/view?usp=drivesdk'
     }
   ];
 

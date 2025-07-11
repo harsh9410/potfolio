@@ -19,7 +19,7 @@ const Education = () => {
       field: 'Science (PCM)',
       institution: 'Kendriya Vidyalaya',
       year: '2021-2022',
-      percentage: '87.2%',
+      percentage: '74.6%',
       status: 'Completed'
     },
     {
@@ -27,7 +27,7 @@ const Education = () => {
       field: 'All Subjects',
       institution: 'Kendriya Vidyalaya',
       year: '2019-2020',
-      percentage: '91.8%',
+      percentage: '87%',
       status: 'Completed'
     }
   ];
